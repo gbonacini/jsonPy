@@ -1,0 +1,18 @@
+from distutils.core import setup, Extension
+import os
+
+versionFile = open('../version', 'r')
+VER = versionFile.readline()
+versionFile.close()
+
+cwd = os.getcwd().split('/')
+
+if( cwd[len(cwd)-1] == 'test'):
+	module1 = Extension('jsonPy', sources = ['jsonPy.c'], library_dirs=['./libs'], libraries = ['jparse'])
+else:
+	module1 = Extension('jsonPy', sources = ['jsonPy.c'], libraries = ['jparse'])
+ 
+setup (name = 'jsonPy',
+        version = VER.rstrip(),
+        description = 'jsonPy package',
+        ext_modules = [module1])

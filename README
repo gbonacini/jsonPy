@@ -1,0 +1,18 @@
+A Python module that permits to parse Json based configuration files, wrapping my Json parser in the library libjparse ( available in this github account ).
+
+* Quickstart:
+
+import jsonPy
+
+try:
+        jsonPy.open("/Users/bg/_Sorgenti/_Json/_JsonPy_LY_hg/test/jsons/sample.null.json")
+        jsonPy.getStringValueByPath("xxxroot.menu.title")
+except jsonPy.JsonPyError,e:
+        print "Exception catched"
+        print e.args
+
+* Outuput:
+
+  Exception catched
+ ('Invalid Json node',)
+

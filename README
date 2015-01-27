@@ -16,3 +16,6 @@ except jsonPy.JsonPyError,e:
   Exception catched
  ('Invalid Json node',)
 
+* Note:
+
+Beta version only few features of libjparse are available: all the features will be added as soon as possible.

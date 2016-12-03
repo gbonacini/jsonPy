@@ -4,3 +4,6 @@ depcomp linguist-vendored
 install-sh linguist-vendored
 libtool linguist-vendored
 ltmain.sh linguist-vendored
+Makefile.in linguist-vendored
+src/Makefile.in linguist-vendored
+test/Makefile.in linguist-vendored

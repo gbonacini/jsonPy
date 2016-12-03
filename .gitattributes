@@ -7,3 +7,8 @@ ltmain.sh linguist-vendored
 Makefile.in linguist-vendored
 src/Makefile.in linguist-vendored
 test/Makefile.in linguist-vendored
+test/genJunitReport.py linguist-vendored
+test/test.py linguist-vendored
+test/test2.py linguist-vendored
+test/test3.py linguist-vendored
+test/test4.py linguist-vendored
